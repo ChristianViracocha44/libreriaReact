@@ -6,13 +6,7 @@ export const Header = () => {
 
         <header className="sectionHeader">
             <div className="logo">Logo</div>
-            <nav className="menu">
-                <ul>
-                    <li>Inicio</li>
-                    <li>Acerca</li>
-                    <li>Contacto</li>
-                </ul>
-            </nav>
+
         </header>
 
 

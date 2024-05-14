@@ -7,17 +7,18 @@ import { Management } from "../pages/Management";
 import {NotFound} from "../pages/NotFound";
 import { Store } from "../pages/Store";
 
-export const LibraeyRouter = () => {
+export const LibraryRouter = () => {
     return (
-      <BrowserRouter>
+      //<BrowserRouter>
         <Routes>
         <Route path="/about" element={<About/>}/>
         <Route path="/catalog" element={<Catalog/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/management" element={<Management/>}/>
         <Route path="/store" element={<Store/>}/>
-        <Route path="*" element={<NotFound />} />
+        <Route path="/notfound" element={<NotFound/>} />
+       
       </Routes>
-    </BrowserRouter>
+    //</BrowserRouter>
   );
 };
