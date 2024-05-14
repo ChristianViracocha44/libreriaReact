@@ -3,6 +3,11 @@
     margin: 0%;
 }
 
+.sectionPrincipal {
+    width: 100%;
+}
+
+
 .sectionHeader {
     display: flex;
     justify-content: space-between;
