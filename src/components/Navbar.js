@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import luna from "../resources/luna.png"
 import { Link } from 'react-router-dom'
 import "../styles/Navbar.css"
 
@@ -9,7 +9,7 @@ export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <nav>
-            <Link to="/home" className="title">Website</Link>
+            <Link to="/home" className="title"><img src={luna} alt="Luna" className="logo-navbar" />  </Link>
 
 
             <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>

@@ -14,7 +14,7 @@ export const Principal = () => {
                 <Header />
                 <Navbar />
                 <LibraryRouter /> 
-                <Body />
+                
                 <Footer />
             </div>
         </div>

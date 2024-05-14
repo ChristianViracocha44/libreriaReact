@@ -2,6 +2,11 @@
     background-color: #1d4ed8;
 }
 
+.logo-navbar {
+    width: 50px; /* Cambia el ancho de la imagen en el navbar */
+    height: auto; /* Mantén la proporción de aspecto */
+}
+
 nav {
     display: flex;
     justify-content: space-between;
