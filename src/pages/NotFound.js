@@ -1,9 +1,10 @@
 import React from 'react'
+import fin_libro from '../resources/fin_libro.jpg'
 
 export const NotFound = () => {
   return (
-    <div>
-    <p>NotFound</p>
-</div>
+    <div className="sectionBody">
+    <img className="sectionBody_img_notfound" src={fin_libro} alt="Logo"/>
+    </div>
   )
 }

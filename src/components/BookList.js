@@ -30,7 +30,6 @@ export const BookList = () => {
         fetchData();
     }, []);
 
-
     console.log("El props es:", Book);
 
   return (
