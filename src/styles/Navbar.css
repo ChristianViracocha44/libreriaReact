@@ -2,12 +2,9 @@
     background-color: #1d4ed8;
 }
 
-.logo-navbar {
-    width: 50px; /* Cambia el ancho de la imagen en el navbar */
-    height: auto; /* Mantén la proporción de aspecto */
-}
 
-nav {
+
+.navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +14,7 @@ nav {
     top: 0;
 }
 
-nav .title {
+.navBar__title {
     font-size: 1.5rem;
     margin: 1rem;
     font-weight: bold;
@@ -25,15 +22,21 @@ nav .title {
     color: white;
 }
 
-nav ul {
+.navBar__img {
+    width: 50px; /* Cambia el ancho de la imagen en el navbar */
+    height: auto; /* Mantén la proporción de aspecto */
+}
+
+.navBar ul {
     display: flex;
 }
 
-nav ul li {
+.navBar ul li {
    list-style: none; 
+   font-size: 1.4rem;
 }
 
-nav ul li a {
+.navBar ul li a {
     display: block;
     text-decoration: none;
     color: white;
@@ -42,11 +45,11 @@ nav ul li a {
     border-radius: 0.5rem;
 }
 
-nav ul li a:not(.active):hover {
+.navBar ul li a:not(.active):hover {
     background-color:#172554 ;
 }
 
-nav .menu {
+.navBar__menu {
     display: none;
     position: absolute;
     top: 0.75rem;
@@ -57,7 +60,7 @@ nav .menu {
     height: 2rem;
 }
 
-nav .menu span {
+.navBar__menu  span {
     height: 0.4rem;
     width: 100%;
     background-color: #fff;
@@ -66,32 +69,32 @@ nav .menu span {
 
 
 @media (max-width: 480px) {
-    nav .menu {
+    .navBar__menu  {
         display: flex;
     }
 
-    nav {
+    .navBar {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    nav ul {
+    .navBar ul {
         display: none;
         flex-direction: column;
         width: 100%;
         margin-bottom: 0.25rem;
     }
 
-    nav ul.open {
+    .navBar ul.open {
         display: flex;
     }
 
-    nav ul li {
+    .navBar ul li {
         width: 100%;
         text-align: center;
     }
 
-    nav ul li a {
+    .navBar ul li a {
         margin: 0.2rem 0.5rem;
     }
 }

@@ -8,11 +8,11 @@ export const Navbar = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <nav>
-            <Link to="/home" className="title"><img src={luna} alt="Luna" className="logo-navbar" />  </Link>
+        <nav className='navBar'>
+            <Link to="/home" className="navBar__title"><img src={luna} alt="Luna" className="navBar__img" />  </Link>
 
 
-            <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+            <div className="navBar__menu" onClick={() => setMenuOpen(!menuOpen)}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -28,11 +28,11 @@ export const Navbar = () => {
                 </li>
 
                 <li>
-                    <Link to="/catalog">Catalog</Link>
+                    <Link to="/catalog">Catalogo</Link>
                 </li>
 
                 <li>
-                    <Link to="/store">Store</Link>
+                    <Link to="/store">Tienda</Link>
                 </li>
 
                 <li>
@@ -40,7 +40,7 @@ export const Navbar = () => {
                 </li>
 
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/about">Acerca</Link>
                 </li>
                 <li>
                     <Link to="/notfound">NotFound</Link>

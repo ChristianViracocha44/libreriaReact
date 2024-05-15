@@ -4,7 +4,19 @@
 }
 
 .sectionPrincipal {
-    width: 100%;
+   width: 100%; 
+}
+
+.sectionBody {
+    justify-content: center; 
+    align-items: center;  
+    align-content: center;  
+    text-align: center;
+}
+
+.sectionBody__p {
+    font-family: sans-serif; /* Cambia el tipo de letra */
+    font-size: 20px; /* Cambia el tamaño de la fuente */
 }
 
 
@@ -12,11 +24,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     background-color: #333;
     color: #fff;
     padding: 1rem;
-    align-content: center;
+    
 }
+
+
+.sectionHeader_img {
+    width: 500px;
+    height: auto;
+}
+
 
 .sectionFooter {
     display: flex;
@@ -26,6 +46,43 @@
     color: #fff;
     padding: 1rem;
     bottom: 0;    
+}
 
-    
+
+.card {
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: #f0e68c;
+    text-align: center;
+}
+
+.card_img {
+    width: 200px;
+}
+
+.sectionBody_card
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+ 
+.bottonSelection {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de apuntador */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.bottonSelection:hover {
+    background-color: #0056b3; /* Color de fondo azul oscuro al pasar el cursor */
 }

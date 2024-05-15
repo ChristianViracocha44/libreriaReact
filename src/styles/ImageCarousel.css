@@ -1,0 +1,23 @@
+.libro-carrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Cambia el tipo de letra */
+    font-size: 20px; /* Cambia el tamaño de la fuente */
+  }
+  
+  .libro-carrusel__img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: #333;
+  }
+  
+  .slick-dots li button:before {
+    color: #333;
+  }

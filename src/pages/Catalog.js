@@ -1,9 +1,10 @@
 import React from "react";
+import { BookList } from "../components/BookList";
 
 export const Catalog=()=>{
 
     return(
-        <div>
-            <p>Catalog</p>
+        <div className="sectionPrincipal">
+                <BookList/>
         </div>
     )}
