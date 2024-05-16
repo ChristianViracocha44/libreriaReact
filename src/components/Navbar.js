@@ -35,9 +35,7 @@ export const Navbar = () => {
                     <Link to="/store">Tienda</Link>
                 </li>
 
-                <li>
-                    <Link to="/management">Management</Link>
-                </li>
+
 
                 <li>
                     <Link to="/about">Acerca</Link>

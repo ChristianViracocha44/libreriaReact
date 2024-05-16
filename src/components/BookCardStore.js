@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import buho from "../resources/buho.png"
+
 
 export const BookCardStore = (props) => {
     const [BookStore, setBookStore] = useState([]);
+    const [purchased, setPurchased] = useState(false);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
 
@@ -24,12 +27,13 @@ export const BookCardStore = (props) => {
         fetchData();
     }, []);
 
-    console.log("El Card Store es:", BookStore);
+    const handleBuyNow = () => {
+        // Actualiza el estado para indicar que se ha realizado la compra
+        setPurchased(true);
+    };
 
     return (
         <div className="cardStore">
-
-
 
             <div className='cardStore_book'>
                 <h2>{BookStore.Title}</h2>
@@ -39,23 +43,32 @@ export const BookCardStore = (props) => {
             </div>
 
             <div className='cardStore_detail'>
-              
-                    <button>Previo</button> |  <button>Próximo</button>
-                    <br />
-                    <br />
-                    <b>Precio: $24.50</b>  <br /> 
-                    <h3>Cantidad</h3>
-                    <input></input> <br /><br />
-                    <button className='bottonSelection'>Añadir al Carrito</button>
-                    <br />
-                    <h3>Ficha Tecnica</h3>
-                    <p><b>Escritor:</b> {BookStore.Writer}</p>
-                    <p><b>Genero:</b> {BookStore.Genre}</p>
-                    <p><b>ISBM:</b> {BookStore.imdbID}</p>
-                    <p><b>Año:</b> {BookStore.Year}</p>
-                    <p><b>Ciudad:</b> {BookStore.Country}</p>
-               
+
+                <button className='bottonSelection'>Previo</button> |  <button className='bottonSelection'>Próximo</button>
+                <br />
+                <br />
+                <b>Precio: $24.50</b>  <br />
+                <h3>Cantidad</h3>
+                <input></input> <br /><br />
+                <button className='bottonSelection' onClick={handleBuyNow}>Comprar Ahora !!!</button>
+                
+                <br />
+                <h3>Ficha Tecnica</h3>
+                <p><b>Escritor:</b> {BookStore.Writer}</p>
+                <p><b>Genero:</b> {BookStore.Genre}</p>
+                <p><b>ISBM:</b> {BookStore.imdbID}</p>
+                <p><b>Año:</b> {BookStore.Year}</p>
+                <p><b>Ciudad:</b> {BookStore.Country}</p>
+
             </div>
+
+            {purchased &&
+                <div className='cardStore_notification'>
+                    <img className="cardStore_notification_img" src={buho} alt="buho"/>
+                    <h1>¡Muchas Gracias por su compra!</h1>
+                </div>
+            }
+
         </div>
     );
 }
