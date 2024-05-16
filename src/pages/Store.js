@@ -6,8 +6,8 @@ export const Store=()=>{
     const {bookid}=useParams();
 
     return(
-        <div>
-            <p>Store {bookid}</p>
+        <div className="sectionBody">
+            <h1>Compra tu Nuevo Libro</h1>
             <BookCardStore 
                 bookid={bookid}
             />

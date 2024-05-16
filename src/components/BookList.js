@@ -13,7 +13,6 @@ export const BookList = () => {
         const fetchData = async () => {
             try {
                 const url = "https://www.omdbapi.com/?s=disney&apikey=ff9520af";
-                //const url = "https://api.jikan.moe/v4/recommendations/manga";
                 const response = await fetch(url);
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');

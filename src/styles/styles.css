@@ -4,13 +4,13 @@
 }
 
 .sectionPrincipal {
-   width: 100%; 
+    width: 100%;
 }
 
 .sectionBody {
-    justify-content: center; 
-    align-items: center;  
-    align-content: center;  
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     text-align: center;
 }
 
@@ -24,7 +24,6 @@
     font-size: 20px; /* Cambia el tamaño de la fuente */
 }
 
-
 .sectionHeader {
     display: flex;
     justify-content: center;
@@ -33,15 +32,12 @@
     background-color: #333;
     color: #fff;
     padding: 1rem;
-    
 }
-
 
 .sectionHeader_img {
     width: 500px;
     height: auto;
 }
-
 
 .sectionFooter {
     display: flex;
@@ -50,7 +46,7 @@
     background-color: #333;
     color: #fff;
     padding: 1rem;
-    bottom: 0;    
+    bottom: 0;
 }
 
 .card_about {
@@ -76,14 +72,13 @@
     color: white;
 }
 
-
 .card {
     background-color: #333;
     border: 1px solid #444;
+    color: #f0e68c;
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
-    color: #f0e68c;
     text-align: center;
 }
 
@@ -91,15 +86,14 @@
     width: 200px;
 }
 
-.sectionBody_card
-{
+.sectionBody_card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
     align-items: center;
 }
- 
+
 .bottonSelection {
     background-color: #007bff; /* Color de fondo azul */
     color: #fff; /* Color de texto blanco */
@@ -117,34 +111,60 @@
 
 .formGroup {
     margin-bottom: 30px;
-  }
+}
 
-
-  .formGroup_label {
+.formGroup_label {
     display: block;
     margin-bottom: 5px;
-  }
+}
 
-  .formGroup_textarea {
+.formGroup_textarea {
     width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-  }
-  
+}
 
-
-  
-  .search_input {
+.search_input {
     width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-  }
-  
-  .search_input:focus {
+}
+
+.search_input:focus {
     outline: none; /* Elimina el contorno al hacer clic en la barra de búsqueda */
-  }
+}
 
+.cardStore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #333;
+    border: 1px solid #444;
+    color: #f0e68c;
+    
+}
+
+.cardStore_book {
+    text-align: center;
+    width: 40%;
+    margin: 20px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background-color: rgb(80, 71, 71);
+}
+
+.cardStore_detail {
+    text-align: center;
+    width:25%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background-color: rgb(80, 71, 71);
+}
