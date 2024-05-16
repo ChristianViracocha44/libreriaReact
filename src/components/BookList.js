@@ -1,4 +1,4 @@
-import React , { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BookCard } from './BookCard';
 
 
@@ -13,9 +13,9 @@ export const BookList = () => {
         const fetchData = async () => {
             try {
                 const url = "https://www.omdbapi.com/?s=disney&apikey=ff9520af";
-               //const url = "https://api.jikan.moe/v4/recommendations/manga";
+                //const url = "https://api.jikan.moe/v4/recommendations/manga";
                 const response = await fetch(url);
-                if (!response.ok ) {
+                if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
                 const data = await response.json();
@@ -32,19 +32,26 @@ export const BookList = () => {
 
     console.log("El props es:", Book);
 
-  return (
+    return (
+        <div className="sectionBody">
+            <h1>Catálogo de libros</h1>
+            
+                <input className="search_input"
+                    type="text"
+                    placeholder="Buscar libros..."
+                />
+         
 
-    <div className="sectionBody_card">    
-    {Book.map((BookService, index) =>
-    (
-        <BookCard
-            key={index}
-            book={BookService}
-        />
-    ))}
-    
-</div>
+            <div className="sectionBody_card">
+                {Book.map((BookService, index) =>
+                (
+                    <BookCard
+                        key={index}
+                        book={BookService}
+                    />
+                ))}
 
-
-  )
+            </div>
+        </div>
+    )
 }

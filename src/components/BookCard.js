@@ -1,4 +1,5 @@
-import React from "react";
+import React  from "react";
+import { Link } from 'react-router-dom';
 
 export const BookCard=(props)=>{
     console.log("El props es:", props);
@@ -11,9 +12,9 @@ export const BookCard=(props)=>{
             <p>imdbID: {props.book.imdbID}</p>
             <p>Año: {props.book.Year}</p>
 
-            <div className="d-flex justify-content-center">
-                <button className="bottonSelection" type="button">Comprar Libro</button>
-            </div>
+            <Link to ={`/store/${props.book.imdbID}`}>
+                <button className="bottonSelection" type="button" >Comprar Libro</button>
+            </Link>
         </div>
 
     )}
