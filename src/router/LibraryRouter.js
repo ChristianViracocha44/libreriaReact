@@ -14,8 +14,10 @@ export const LibraryRouter = () => {
         <Route path="/about" element={<About/>}/>
         <Route path="/catalog" element={<Catalog/>}/>
         <Route path="/home" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/management" element={<Management/>}/>
         <Route path="/store/:bookid" element={<Store/>}/>
+        <Route path="/store/" element={<Store/>}/>
         <Route path="*" element={<NotFound/>} />
        
       </Routes>
