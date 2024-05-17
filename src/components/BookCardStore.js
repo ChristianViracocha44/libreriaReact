@@ -1,36 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import buho from "../resources/buho.png"
+import { useBookDetail } from '../hooks/useBookDetail';
+import { BookCart } from './BookCart';
 
 
 export const BookCardStore = (props) => {
-    const [BookStore, setBookStore] = useState([]);
+
     const [purchased, setPurchased] = useState(false);
-    const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const url = `https://www.omdbapi.com/?i=${props.bookid}&apikey=ff9520af`;
-                const response = await fetch(url);
-                if (!response.ok) {
-                    throw new Error('Failed to fetch data');
-                }
-                const data = await response.json();
-                setBookStore(data);
-                setLoading(false);
-                console.log(loading);
-            } catch (error) {
-                setError(error.message);
-                setLoading(false);
-                console.log(error);
-            }
-        };
-        fetchData();
-    }, []);
-
-    console.log(error);
-
+    const { BookStore } = useBookDetail(props);
 
     const handleBuyNow = () => {
         // Actualiza el estado para indicar que se ha realizado la compra
@@ -56,7 +33,7 @@ export const BookCardStore = (props) => {
                 <h3>Cantidad</h3>
                 <input></input> <br /><br />
                 <button className='bottonSelection' onClick={handleBuyNow}>Comprar Ahora !!!</button>
-                
+
                 <br />
                 <h3>Ficha Tecnica</h3>
                 <p><b>Escritor:</b> {BookStore.Writer}</p>
@@ -67,9 +44,12 @@ export const BookCardStore = (props) => {
 
             </div>
 
+           
+
             {purchased &&
                 <div className='cardStore__notification'>
-                    <img className="cardStore__notification__img" src={buho} alt="buho"/>
+                    <img className="cardStore__notification__img" src={buho} alt="buho" />
+                    <div><BookCart /></div>
                     <h1>¡Muchas Gracias por su Compra!</h1>
                 </div>
             }

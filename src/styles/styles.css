@@ -167,7 +167,7 @@
 }
 
 .cardStore__notification__img {
-    width: 300px;
+    width: 50px;
     height: auto;
 }
 
@@ -215,3 +215,55 @@
 .searchBar__results__li:hover {
     background-color: #7f789c; 
 }
+
+
+
+
+.carBookList {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  
+  }
+  
+  .carBookList__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .book-list {
+    padding: 0;
+  }
+  
+  .carBookList__item {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+  }
+  
+  .carBookList__item button {
+    padding: 5px 10px;
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .carBookList__finish {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
