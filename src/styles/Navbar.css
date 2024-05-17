@@ -23,8 +23,8 @@
 }
 
 .navBar__img {
-    width: 50px; /* Cambia el ancho de la imagen en el navbar */
-    height: auto; /* Mantén la proporción de aspecto */
+    width: 50px; 
+    height: auto; 
 }
 
 .navBar ul {

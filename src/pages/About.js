@@ -4,27 +4,27 @@ export const About = () => {
 
     return (
         <div className="card_about">
-            <div className="card_form">
+            <div className="card__form">
 
                 <h3>Contáctanos</h3>
                 <form >
                     <div className="formGroup">
-                        <label className="formGroup_label" htmlFor="name">Nombre:</label>
+                        <label className="formGroup__label" htmlFor="name">Nombre:</label>
                         <input type="text" id="name" name="name" required />
                     </div>
                     <div className="formGroup">
-                        <label className="formGroup_label" htmlFor="email">Correo electrónico:</label>
+                        <label className="formGroup__label" htmlFor="email">Correo electrónico:</label>
                         <input type="email" id="email" name="email" required />
                     </div>
                     <div className="formGroup">
-                        <label className="formGroup_label" htmlFor="message">Mensaje:</label>
-                        <textarea className="formGroup_textarea" id="message" name="message" required />
+                        <label className="formGroup__label" htmlFor="message">Mensaje:</label>
+                        <textarea className="formGroup__textarea" id="message" name="message" required />
                     </div>
                     <button className="bottonSelection" type="submit">Enviar</button>
                 </form>
             </div>
 
-            <div className="card_info">
+            <div className="card__info">
                 <h2>Acerca de nuestra librería</h2>
                 <p>¡Bienvenido a nuestra librería! En nuestra tienda, nos apasiona fomentar el amor por la lectura y proporcionar un espacio acogedor donde los amantes de los libros puedan explorar, descubrir y disfrutar de una amplia selección de títulos.</p>
                 <p>Nuestra librería fue fundada en el año 2024 por Christian Viracocha, con la visión de crear un lugar donde la comunidad pudiera reunirse, compartir ideas y sumergirse en el maravilloso mundo de la literatura.</p>

@@ -14,7 +14,7 @@
     text-align: center;
 }
 
-.sectionBody_img_notfound {
+.sectionBody__img__notfound {
     width: 1000px;
     height: auto;
 }
@@ -34,7 +34,7 @@
     padding: 1rem;
 }
 
-.sectionHeader_img {
+.sectionHeader__img {
     width: 500px;
     height: auto;
 }
@@ -53,25 +53,6 @@
     display: flex;
 }
 
-.card_info {
-    flex: 2;
-    background-color: #333;
-    border: 1px solid #444;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    color: white;
-}
-.card_form {
-    flex: 1;
-    background-color: #333;
-    border: 1px solid #444;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    color: white;
-}
-
 .card {
     background-color: #333;
     border: 1px solid #444;
@@ -82,7 +63,28 @@
     text-align: center;
 }
 
-.card_img {
+.card__info {
+    flex: 2;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+.card__form {
+    flex: 1;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+
+
+
+.card__img {
     width: 200px;
 }
 
@@ -113,12 +115,12 @@
     margin-bottom: 30px;
 }
 
-.formGroup_label {
+.formGroup__label {
     display: block;
     margin-bottom: 5px;
 }
 
-.formGroup_textarea {
+.formGroup__textarea {
     width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -126,7 +128,7 @@
     font-size: 16px;
 }
 
-.search_input {
+.search__input {
     width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -134,7 +136,7 @@
     font-size: 16px;
 }
 
-.search_input:focus {
+.search__input:focus {
     outline: none; /* Elimina el contorno al hacer clic en la barra de búsqueda */
 }
 
@@ -151,7 +153,7 @@
     
 }
 
-.cardStore_book {
+.cardStore__book {
     text-align: center;
     width: 40%;
     margin: 20px;
@@ -160,7 +162,7 @@
     background-color: rgb(80, 71, 71);
 }
 
-.cardStore_detail {
+.cardStore__detail {
     text-align: center;
     width:25%;
     padding: 10px;
@@ -169,7 +171,7 @@
     background-color: rgb(80, 71, 71);
 }
 
-.cardStore_notification {
+.cardStore__notification {
     text-align: center;
     width:25%;
     margin: 20px;
@@ -179,7 +181,7 @@
     background-color: rgb(80, 71, 71);
 }
 
-.cardStore_notification_img {
+.cardStore__notification__img {
     width: 300px;
     height: auto;  
 }

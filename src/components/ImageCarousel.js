@@ -71,16 +71,15 @@ export const ImageCarousel = () => {
             imagen: 'https://m.media-amazon.com/images/I/91bJHugHgSL._SL800_.jpg?w=640&q=70',
             titulo: 'El bestiario de Axlin',
         },
-        // Agrega más libros aquí
+
     ];
 
 
     return (
         <Slider {...settings}>
             {libros.map((libro) => (
-                <div key={libro.id} className="libro-carrusel">
-                    <img className="libro-carrusel__img" src={libro.imagen} alt={libro.titulo} />
-                    <h4>{libro.titulo}</h4>
+                <div key={libro.id} className="carouselBook">   
+                    <img className="carouselBook__img" src={libro.imagen} alt={libro.titulo} />
                 </div>
             ))}
         </Slider>

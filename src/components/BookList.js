@@ -20,22 +20,27 @@ export const BookList = () => {
                 const data = await response.json();
                 setBooks(data.Search);
                 setLoading(false);
+                
             } catch (error) {
                 setError(error.message);
                 setLoading(false);
+                
             }
         };
 
         fetchData();
     }, []);
 
+    console.log(error);
+    console.log(loading);
     console.log("El props es:", Book);
+
 
     return (
         <div className="sectionBody">
             <h1>Catálogo de libros</h1>
             
-                <input className="search_input"
+                <input className="search__input"
                     type="text"
                     placeholder="Buscar libros..."
                 />

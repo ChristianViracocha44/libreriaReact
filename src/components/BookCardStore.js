@@ -19,13 +19,18 @@ export const BookCardStore = (props) => {
                 const data = await response.json();
                 setBookStore(data);
                 setLoading(false);
+                console.log(loading);
             } catch (error) {
                 setError(error.message);
                 setLoading(false);
+                console.log(error);
             }
         };
         fetchData();
     }, []);
+
+    console.log(error);
+
 
     const handleBuyNow = () => {
         // Actualiza el estado para indicar que se ha realizado la compra
@@ -35,14 +40,14 @@ export const BookCardStore = (props) => {
     return (
         <div className="cardStore">
 
-            <div className='cardStore_book'>
+            <div className='cardStore__book'>
                 <h2>{BookStore.Title}</h2>
-                <img src={BookStore.Poster} alt={BookStore.Title} className="card_img" />
+                <img src={BookStore.Poster} alt={BookStore.Title} className="card__img" />
                 <p><b>Sinopsis:</b> El mundo de Axlin está plagado de monstruos. Algunos atacan a los viajeros en los caminos, otros asedian las aldeas hasta que logran arrasarlas por completo y otros entran en las casas por las noches para llevarse a los niños mientras duermen. Axlin ha crecido siendo consciente de que cualquier día le puede tocar a ella. Su gente ha sobrevivido a los monstruos durante generaciones y ha aprendido a evitarlos en la medida de lo posible. Pero un día Axlin descubre que existen muchos tipos de monstruos diferentes, que cada aldea se enfrenta a sus propias pesadillas y que hay criaturas que no conoce y ante las que no sabe cómo defenderse.</p>
 
             </div>
 
-            <div className='cardStore_detail'>
+            <div className='cardStore__detail'>
 
                 <button className='bottonSelection'>Previo</button> |  <button className='bottonSelection'>Próximo</button>
                 <br />
@@ -63,9 +68,9 @@ export const BookCardStore = (props) => {
             </div>
 
             {purchased &&
-                <div className='cardStore_notification'>
-                    <img className="cardStore_notification_img" src={buho} alt="buho"/>
-                    <h1>¡Muchas Gracias por su compra!</h1>
+                <div className='cardStore__notification'>
+                    <img className="cardStore__notification__img" src={buho} alt="buho"/>
+                    <h1>¡Muchas Gracias por su Compra!</h1>
                 </div>
             }
 

@@ -1,15 +1,15 @@
-.libro-carrusel {
+.carouselBookl {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: Arial, sans-serif; /* Cambia el tipo de letra */
-    font-size: 20px; /* Cambia el tamaño de la fuente */
+    font-family: Arial, sans-serif; 
+    font-size: 20px; 
   }
   
-  .libro-carrusel__img {
-    max-width: 80%;
+  .carouselBook__img {
+    max-width: 85%;
     height: auto;
   }
   
