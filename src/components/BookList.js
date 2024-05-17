@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BookCard } from './BookCard';
-
+import { SearchBar } from './SearchBar';
 
 export const BookList = () => {
 
@@ -33,18 +33,16 @@ export const BookList = () => {
 
     console.log(error);
     console.log(loading);
-    console.log("El props es:", Book);
+    console.log("El props es BookList:", Book);
 
 
     return (
         <div className="sectionBody">
-            <h1>Catálogo de libros</h1>
-            
-                <input className="search__input"
-                    type="text"
-                    placeholder="Buscar libros..."
-                />
-         
+            <h1>Catálogo de Libros</h1>
+
+     
+
+            <SearchBar  books={Book} />
 
             <div className="sectionBody_card">
                 {Book.map((BookService, index) =>
