@@ -8,7 +8,7 @@ import { Store } from "../pages/Store";
 
 export const LibraryRouter = () => {
     return (
-      //<BrowserRouter>
+
         <Routes>
         <Route path="/about" element={<About/>}/>
         <Route path="/catalog" element={<Catalog/>}/>
@@ -17,8 +17,7 @@ export const LibraryRouter = () => {
         <Route path="/store/:bookid" element={<Store/>}/>
         <Route path="/store/" element={<Store/>}/>
         <Route path="*" element={<NotFound/>} />
-       
       </Routes>
-    //</BrowserRouter>
+
   );
 };

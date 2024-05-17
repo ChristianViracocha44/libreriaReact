@@ -250,15 +250,19 @@
   }
   
   .carBookList__item button {
-    padding: 5px 10px;
+    padding: 5px ;
     background-color: #e53935;
     color: #fff;
     border: none;
     border-radius: 3px;
     cursor: pointer;
   }
+
+  .carBookList__list {
+    padding-left: 5px;
+  }
   
-  .carBookList__finish {
+  .carBookList__button{
     margin-top: 15px;
     padding: 10px 20px;
     background-color: #4caf50;
@@ -266,4 +270,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .carBookList__input {
+    margin-left: 10px;
+    width: 10px; /* Ajusta el ancho del input si es necesario */
   }

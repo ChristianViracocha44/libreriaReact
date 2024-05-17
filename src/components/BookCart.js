@@ -17,10 +17,14 @@ export const BookCart = () => {
   return (
     <div className="carBookList">
       <h2 className="carBookList__title">Lista de Compras de Libros</h2>
-      <ul>
+      <ul className="carBookList__list">
         {Book.map((purchase) => (
           <li key={purchase.imdbID} className="carBookList__item">
-            <span> {purchase.Title} - 25$ </span>
+             <input 
+          type="text" 
+          defaultValue="1" 
+          className="carBookList__input" 
+        /><span> {purchase.Title} - 25$ </span>
             <button onClick={() => handleRemoveItem(purchase.imdbID)}>
               Quitar
             </button>
@@ -28,7 +32,7 @@ export const BookCart = () => {
         ))}
       </ul>
       <b>Total: 75$</b> <br/>
-      <button onClick={handleFinishPurchase} className="carBookList__finish">
+      <button onClick={handleFinishPurchase} className="carBookList__button">
         Finalizar Compra
       </button>
     </div>
